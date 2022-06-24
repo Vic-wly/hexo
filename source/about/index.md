@@ -1,8 +1,6 @@
----
 title: about
 date: 2022-01-04 23:13:16
 ---
-
 ## About me
 
 爱生活

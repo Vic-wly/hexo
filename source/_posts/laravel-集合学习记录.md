@@ -60,7 +60,7 @@ $translated = $collection->toLocale('es');
 #### 可用方法 :https://learnku.com/docs/laravel/8.5/collections/10384#b85d9e
 ```
 all //方法返回该集合所代表的底层数组
-average //方法的别名
+average //avg方法的别名
 avg //返回集合中所有项目的平均值，可传参 avg(string);
 chunk //分解集合，$collection->chunk(4); 四个一组
 chunkWhile
