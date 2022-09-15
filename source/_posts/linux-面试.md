@@ -1,4 +1,4 @@
-title: linux 面试
+title: linux 基础
 author: Laiyong Wang
 date: 2022-07-15 08:46:44
 tags:

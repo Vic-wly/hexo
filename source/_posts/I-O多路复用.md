@@ -20,3 +20,21 @@ redis的io模型主要是基于epoll实现的，不过它也提供了 select和k
 
 5. select poll epoll 的对比
 ![upload successful](/images/pasted-1.png)
+
+6. 为什么有io多路复用机制
+没有IO多路复用机制时，有BIO(同步阻塞)、NIO(同步非阻塞)两种实现方式
+BIO : 单线程时，无法处理并发
+NIO : 每次轮询所有 fd （包括没有发生读写实际的 fd）会很浪费 CPU
+7. io 多路复用的三种方式
+fd全称“File descriptor”,中文名为“文件描述符”,它是内核为了高效管理这些已经被打开的文件所创建的一种索引
+7及之后的所有答案参考链接
+https://juejin.cn/post/6882984260672847879
+8. select 函数及缺点
+
+9. poll 函数及缺点
+
+10. epoll 函数及缺点
+
+11. epoll LT 和 ET 的区别
+
+12. epoll 的应用

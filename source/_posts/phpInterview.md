@@ -111,6 +111,7 @@ zval变量容器，除了包含变量的类型和值，还包括两个字节的�
 观察者模式 发布/订阅模式：当一个对象状态发生变化时，依赖它的对象全部会收到通知，并自动更新
 适配器模式：将一个类的接口转换成客户希望的接口，使得原本不兼容的接口可以兼容
 依赖注入模式：是ioc的一种实现方式。用来减少程序中的耦合
+策略模式：同一功能的不同实现方式
 
 15. HTTP中GET和POST的区别
 GET在浏览器回退时是无害的，而POST会再次提交请求。
@@ -220,5 +221,77 @@ http的连接时无状态的，https是由ssl/tls+http构建的可进行加密�
 非对称加密：服务器端把公钥传给客户端，客户端拿着公钥对数据进行加密，然后客户端发送加密过的数据到服务器，服务器将加密后的数据用私钥解密
 
 34. 熔断 降级 限流
-限流算法： 令牌痛 楼桶
-https://zhuanlan.zhihu.com/p/61363959
+参考链接：https://zhuanlan.zhihu.com/p/61363959
+- 关系
+熔断是降级方式的一种，降级又是限流的一种方式，三者都是为了通过一定的方式去保护流量过大时，保护系统的手段。
+- 限流算法
+令牌痛：分配，分到了才能运行
+漏斗：先存着，满了就拒绝
+计数器：字面意思，单位时间内超过就拒绝
+
+35. 具有相等成员的同一个类的两个实例与===运算符不匹配
+```
+$a = new stdClass();
+$a->foo = "bar";
+$b = clone $a;
+var_dump($a === $b);//false
+```
+
+36. fastCGI 和 CGI 的区别？php-fpm是啥
+fastCGI 是一种常驻内存的 CGI，只需要加载一次，解决了 CGI 程序每次都要重新进行 fork 一个新的进程。 最大的区别是 fastCGI 能独立运行，而 CGI 只能依托于 Apache 运行
+php-fpm  是 fastCGI 的实现，并提供了进程管理的功能。
+进程包含 master 进程和 worker 进程两种进程。
+master 进程只有一个，负责监听端口，接收来自 Web Server 的请求，而 worker 进程则一般有多个(具体数量根据实际需要配置)，每个进程内部都嵌入了一个 PHP 解释器，是 PHP 代码真正执行的地方
+
+37. PHP的数组和C语言的数组结构上有何区别？
+ php的数组是一个hashtable 内存地址不连续  C数组是一个数组。内存地址连续
+ hash基于数组。数组在内存空间上是连续的地址。hash则不连续
+ 
+38. B+Tree是怎么进行搜索的
+https://blog.csdn.net/weixin_44758458/article/details/88653810
+
+39. PHP的的弱类型变量是怎么实现的？
+通过zval结构。 zval 包含变量的信息;
+```
+zval{
+    type
+    value
+}
+```
+type 记录变量的类型。然后根据不同的类型，找到不同的value
+
+40. PHP中发起http请求有哪几种方式
+curl、fscocket、socket
+
+41. 海量数据处理面试题与十个方法大总结
+https://blog.csdn.net/v_JULY_v/article/details/6279498
+
+42. php进程模型，php怎么支持多个并发
+PHP 默认并不支持多线程，要使用多线程需要安装 pthread 扩展，而要安装 pthread 扩展，必须使用 --enable-maintainer-zts 参数重新编译 PHP，这个参数是指定编译 PHP 时使用线程安全方式
+43. nginx的进程模型，怎么支持多个并发
+io多路复用
+44. nginx+php运行原理；一个请求到达nginx的全部处理过程（nginx自身会调用哪些逻辑）、然后怎么与php通信，中间的流程是什么样的等等
+与在浏览器中输入 url 到浏览器展示页面有相同的流程
+
+![upload successful](/images/pasted-16.png)
+
+1、nginx的worker进程直接管理每一个请求到nginx的网络请求。
+
+2、对于php而言，由于在整个网络请求的过程中php是一个cgi程序的角色，所以采用名为php-fpm的进程管理程序来对这些被请求的php程序进行管理。php-fpm程序也如同nginx一样，需要监听端口，并且有master和worker进程。worker进程直接管理每一个php进程。
+
+3、关于fastcgi：fastcgi是一种进程管理器，管理cgi进程。市面上有多种实现了fastcgi功能的进程管理器，php-fpm就是其中的一种。再提一点，php-fpm作为一种fast-cgi进程管理服务，会监听端口，一般默认监听9000端口，并且是监听本机，也就是只接收来自本机的
+
+端口请求，所以我们通常输入命令 netstat -nlpt|grep php-fpm 会得到：
+
+tcp        0      0 127.0.0.1:9000              0.0.0.0:*                   LISTEN      1057/php-fpm
+　　
+
+这里的127.0.0.1:9000 就是监听本机9000端口的意思。
+
+4、关于fastcgi的配置文件，目前fastcgi的配置文件一般放在nginx.conf同级目录下，配置文件形式，一般有两种：fastcgi.conf  和 fastcgi_params。不同的nginx版本会有不同的配置文件，这两个配置文件有一个非常重要的区别：fastcgi_parames文件中缺少下列配置：
+
+fastcgi_param  SCRIPT_FILENAME    $document_root$fastcgi_script_name;
+
+我们可以打开fastcgi_parames文件加上上述行，也可以在要使用配置的地方动态添加。使得该配置生效。
+
+5、当需要处理php请求时，nginx的worker进程会将请求移交给php-fpm的worker进程进行处理，也就是最开头所说的nginx调用了php，其实严格得讲是nginx间接调用php
