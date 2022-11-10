@@ -1,6 +1,6 @@
-title: LeetCode 简单算法 - 自己实现
+title: leetCode
 author: Laiyong Wang
-date: 2022-07-28 08:37:49
+date: 2022-11-07 13:23:46
 tags:
 ---
 1. 给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素
@@ -44,6 +44,32 @@ class Solution {
                 return $k;
             }
         }
+    }
+}
+```
+2. 编写一个高效的算法来搜索 m x n 矩阵 matrix 中的一个目标值 target 。该矩阵具有以下特性：每行的元素从左到右升序排列,每列的元素从上到下升序排。
+```
+class Solution {
+
+    /**
+     * @param Integer[][] $matrix
+     * @param Integer $target
+     * @return Boolean
+     */
+    function searchMatrix($matrix, $target) {
+        $total = count($matrix) - 1;//行
+        $line = 0;
+        while(true){
+            if (!isset($matrix[$total][$line])) return false;
+            if ($matrix[$total][$line] == $target){
+                return true;
+            }elseif($matrix[$total][$line] < $target){
+                $line++;
+            } else {
+                $total--;
+            }
+        }
+        return false;
     }
 }
 ```
