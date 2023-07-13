@@ -101,6 +101,7 @@ var_dump($refClass->getDefaultProperties());
 zval变量容器，除了包含变量的类型和值，还包括两个字节的额外信息。第一个是"is_ref"，是个bool值，用来标识这个变量是否是属于引用集合(reference set)。通过这个字节，php引擎才能把普通变量和引用变量区分开来，由于php允许用户通过使用&来使用自定义引用，zval变量容器中还有一个内部引用计数机制，来优化内存使用。
 
 第二个额外字节是"refcount"，用以表示指向这个zval变量容器的变量(也称符号即symbol)个数。所有的符号存在一个符号表中，其中每个符号都有作用域(scope)。
+<https://cloud.tencent.com/developer/article/2045397?from=article.detail.1723827&areaSource=106000.1&traceId=qP4JYBfIWDzQdslhGZ4wx>
 
 13. 数组的实现方式
 哈希表+双向链表（哈希冲突是会写到同一个链表上），通过key值读取，使得可以在O(1)的时间复杂度下实现数组的增删, 并同时支持线性遍历和随机访问

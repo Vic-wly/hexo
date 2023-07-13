@@ -13,4 +13,6 @@ tags:
 - MVCC
 多版本并发控制，是为了在读取数据时不加锁来提高读取效率和并发性的一种手段
 基于undolog、版本链、readview
-
+这篇文章说的非常好
+<https://segmentfault.com/a/1190000040957477?utm_source=sf-similar-article>
+<https://segmentfault.com/a/1190000037557620>
