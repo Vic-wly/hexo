@@ -159,32 +159,22 @@ https://www.rabbitmq.com/getstarted.html
 2、生产者 send.php
 ```
 <?php
-
 require_once __DIR__ . '/../vendor/autoload.php';
 use PhpAmqpLib\Connection\AMQPStreamConnection;
 use PhpAmqpLib\Message\AMQPMessage;
 
-$connection = new AMQPStreamConnection('42.192.144.242',5672, 'wanglaiyong', 'Friends12w3');
+$connection = new AMQPStreamConnection('42.192.144.242', 5672, 'wanglaiyong', 'Friends12w3');
 $channel = $connection->channel();
 
-$channel->queue_declare('task_queue', false, true, false, false);
+$channel->queue_declare('hello', false, false, false, false);
 
-$data = implode(' ', array_slice($argv, 1));
-if (empty($data)) {
-    $data = "Hello World!";
-}
-$msg = new AMQPMessage(
-    $data,
-    array('delivery_mode' => AMQPMessage::DELIVERY_MODE_PERSISTENT)
-);
+$msg = new AMQPMessage('Hello World!');
+$channel->basic_publish($msg, '', 'hello');
 
-$channel->basic_publish($msg, '', 'task_queue');
-
-echo ' [x] Sent ', $data, "\n";
+echo " [x] Sent 'Hello World!'\n";
 
 $channel->close();
 $connection->close();
-?>
 ```
 3、 消费者 receive.php
 
@@ -193,28 +183,21 @@ $connection->close();
 require_once __DIR__ . '/../vendor/autoload.php';
 use PhpAmqpLib\Connection\AMQPStreamConnection;
 
-$connection = new AMQPStreamConnection('42.192.144.242',5672, 'wanglaiyong', 'Friends12w3');
+
+$connection = new AMQPStreamConnection('42.192.144.242', 5672, 'wanglaiyong', 'Friends12w3');
 $channel = $connection->channel();
 
-$channel->queue_declare('task_queue', false, true, false, false);
+$channel->queue_declare('hello', false, false, false, false);
 
 echo " [*] Waiting for messages. To exit press CTRL+C\n";
 
 $callback = function ($msg) {
     echo ' [x] Received ', $msg->body, "\n";
-    sleep(substr_count($msg->body, '.'));
-    echo " [x] Done\n";
-    $msg->ack();
 };
 
-$channel->basic_qos(null, 1, null);
-$channel->basic_consume('task_queue', '', false, false, false, false, $callback);
+$channel->basic_consume('hello', '', false, true, false, false, $callback);
 
 while ($channel->is_open()) {
     $channel->wait();
 }
-
-$channel->close();
-$connection->close();
-?>
 ```
