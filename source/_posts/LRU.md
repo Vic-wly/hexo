@@ -1,4 +1,4 @@
-title: ' LRU 算法'
+title: ' LRU 算法及其优化 LFU 算法'
 author: Laiyong Wang
 date: 2024-05-09 11:57:09
 tags:
@@ -27,9 +27,9 @@ tags:
   
 #### 如何避免缓存污染（即解决缺陷2）
   提高数据进入活跃 LRU 链表（或者 young 区域）的条件
+  这个我认为就是 LFU 的原理
   还是参考 Linux 和 mysql 的做法
   Linux：内存页被访问第二次的时候，才将页从 inactive list 升级到 active list 里。
   mysql：内存页被访问第二次的时候，不会马上将该页从 old 区域升级到 young 区域，还要对停留在 old 区域的时间判断：
   - 如果第二次的访问时间与第一次访问的时间在 1 秒内（默认值），那么该页就不会被从 old 区域升级到 young 区域；
   - 如果第二次的访问时间与第一次访问的时间超过 1 秒，那么该页就会从 old 区域升级到 young 区域；
-  

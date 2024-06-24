@@ -1,4 +1,4 @@
-title: 服务器安装 rabbitMQ 及使用方法
+title: 服务器安装 rabbitMQ 及使用方法，内含我服务器地址账号密码
 author: Laiyong Wang
 date: 2022-09-04 22:34:57
 tags:
