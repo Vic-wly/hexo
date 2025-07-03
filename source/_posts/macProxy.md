@@ -1,7 +1,10 @@
 title: mac 命令行设置代理进行科学上网
 author: Laiyong Wang
-date: 2022-10-09 16:58:23
 tags:
+  - mac
+  - vpn
+categories: []
+date: 2022-10-09 16:58:00
 ---
 #### mac 电脑科学上网时，使用命令行，会发现命令行内的操作并没有科学上网，需要配置下
 

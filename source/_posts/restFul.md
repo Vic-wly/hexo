@@ -1,7 +1,9 @@
 title: restFul 的几种类型
 author: Laiyong Wang
-date: 2023-02-23 11:25:27
 tags:
+  - http
+categories: []
+date: 2023-02-23 11:25:00
 ---
 ### GET
 安全、幂等；

@@ -1,7 +1,10 @@
 title: mysql 的日志 undo log、redo log、binlog
 author: Laiyong Wang
-date: 2024-05-18 11:46:01
 tags:
+  - mysql
+  - ''
+categories: []
+date: 2024-05-18 11:46:00
 ---
 - undo log（回滚日志）：是 Innodb 存储引擎层生成的日志，实现了事务中的原子性，主要用于事务回滚和 MVCC。
 - redo log（重做日志）：是 Innodb 存储引擎层生成的日志，实现了事务中的持久性，主要用于掉电等故障恢复；

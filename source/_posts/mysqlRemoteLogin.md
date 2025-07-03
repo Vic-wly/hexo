@@ -1,7 +1,9 @@
 title: mysql 允许用户远程登录
 author: Laiyong Wang
-date: 2022-02-08 14:20:18
 tags:
+  - mysql
+categories: []
+date: 2022-02-08 14:20:00
 ---
 mysql 允许某个用户远程登录
 

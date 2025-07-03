@@ -1,7 +1,9 @@
 title: go 的 atomic
 author: Laiyong Wang
-date: 2024-06-27 18:51:30
 tags:
+  - go
+categories: []
+date: 2024-06-27 18:51:00
 ---
 go 语言中原子操作是硬件级的
 `sync/atomic`包提供了底层的原子操作，用于在多个goroutine之间安全地操作共享变量。原子操作能够保证这些操作是不可分割的，即不会被其他操作打断，从而避免数据竞争（race condition）。

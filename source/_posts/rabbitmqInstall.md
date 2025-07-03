@@ -1,7 +1,9 @@
-title: 服务器安装 rabbitMQ 及使用方法，内含我服务器地址账号密码
+title: 服务器安装 rabbitMQ 及使用方法
 author: Laiyong Wang
-date: 2022-09-04 22:34:57
 tags:
+  - mq
+categories: []
+date: 2022-09-04 22:34:00
 ---
 #### PS：我的服务器系统及版本：centos8
 - 参考（rabbitmq官网）：https://www.rabbitmq.com/install-rpm.html

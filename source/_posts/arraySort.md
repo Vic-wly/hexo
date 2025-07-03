@@ -1,7 +1,9 @@
-title: 二维数组以某一列的大小正向排序
+title: php实现：二维数组以某一列的大小正向排序
 author: Laiyong Wang
-date: 2022-06-20 15:55:25
 tags:
+  - php
+categories: []
+date: 2022-06-20 15:55:00
 ---
 ##### 二维数组以某一列的大小正向排序
 ```

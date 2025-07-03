@@ -1,7 +1,10 @@
 title: go并发编程实战 - 基本并发原语，学习总结
 author: Laiyong Wang
-date: 2024-06-24 13:04:36
 tags:
+  - go
+  - 并发原语
+categories: []
+date: 2024-06-24 13:04:00
 ---
 ### 并发原语的种类及使用场景
 - 种类

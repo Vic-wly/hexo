@@ -1,7 +1,9 @@
 title: mysql 日期函数简单应用
 author: Laiyong Wang
-date: 2022-10-27 11:12:41
 tags:
+  - mysql
+categories: []
+date: 2022-10-27 11:12:00
 ---
 #### 常用日期函数
 ```

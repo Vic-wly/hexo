@@ -1,7 +1,10 @@
-title: redis基础 被误删，github复制重新开个
+title: redis基础
 author: Laiyong Wang
-date: 2024-05-14 18:22:12
 tags:
+  - redis
+  - ''
+categories: []
+date: 2024-05-14 18:22:00
 ---
 1. 什么是redis?
 Redis 是一个基于内存的高性能key-value数据库。

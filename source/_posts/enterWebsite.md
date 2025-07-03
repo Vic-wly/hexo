@@ -1,7 +1,11 @@
 title: 当键入网址后，到网页显示，其间发生了什么
 author: Laiyong Wang
-date: 2024-05-11 17:14:22
 tags:
+  - dns
+  - http
+  - tcp
+categories: []
+date: 2024-05-11 17:14:00
 ---
 #### 在PHP基础里写过基础的，重新写个详细版的
 

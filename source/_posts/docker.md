@@ -1,7 +1,9 @@
 title: 学习 docker，开个文章记录下遇到的问题和知识点
 author: Laiyong Wang
-date: 2024-05-29 12:25:20
 tags:
+  - docker
+categories: []
+date: 2022-05-29 12:25:00
 ---
 ###### 我学习时与 chatGPT 的问答，学习中你遇到的问题可能我也遇到过，供参考：https://chatgpt.com/share/a2b2ea6f-b73f-4cf2-b970-026bf566c2db
 #### 工具以及学习途径

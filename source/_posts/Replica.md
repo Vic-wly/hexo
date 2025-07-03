@@ -1,7 +1,10 @@
 title: mongodb的副本集部署和分片集群部署
 author: Laiyong Wang
-date: 2024-07-15 19:21:00
 tags:
+  - mongoDB
+  - ''
+categories: []
+date: 2024-07-15 19:21:00
 ---
 MongoDB 提供了两种主要的高可用和扩展机制：副本集（Replica Set）和分片（Sharding）。下面分别介绍这两种机制的部署方法。
 

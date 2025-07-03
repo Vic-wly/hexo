@@ -1,7 +1,9 @@
 title: mysql 数据页一页16kb能存多少数据量
 author: Laiyong Wang
-date: 2024-05-17 12:37:22
 tags:
+  - mysql
+categories: []
+date: 2024-05-17 12:37:00
 ---
 ## chatGPT 的答案
 

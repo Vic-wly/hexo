@@ -1,7 +1,10 @@
 title: php-fpm的主进程、子进程、nginx的工作进程还有工作进程的最大连接数之间的关系
 author: Laiyong Wang
-date: 2024-06-05 23:29:04
 tags:
+  - php
+  - php-fpm
+categories: []
+date: 2024-06-05 23:29:00
 ---
 ### PHP-FPM 进程模型
 

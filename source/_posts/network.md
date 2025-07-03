@@ -1,7 +1,11 @@
 title: 网络通信
 author: Laiyong Wang
-date: 2022-08-04 23:57:49
 tags:
+  - http
+  - tcp
+  - udp
+categories: []
+date: 2022-08-04 23:57:00
 ---
 1. TCP UDP
 TCP 一种面向连接(连接导向)的、可靠的、基于IP的传输层协议，能够对自己提供的连接实施控制。适用于要求可靠传输的应用，例如文件传输。面向字节流，传输慢

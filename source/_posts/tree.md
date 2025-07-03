@@ -1,7 +1,9 @@
 title: '数据结构 : 树'
 author: Laiyong Wang
-date: 2022-11-11 11:11:14
 tags:
+  - 数据结构
+categories: []
+date: 2022-11-11 11:11:00
 ---
 ### 树的基本概念
 1. 结点

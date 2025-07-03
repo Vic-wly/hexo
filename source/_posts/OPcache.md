@@ -1,7 +1,9 @@
 title: OPcache 工作原理
 author: Laiyong Wang
-date: 2024-06-05 21:14:45
 tags:
+  - opcache
+categories: []
+date: 2024-06-05 21:14:00
 ---
 OPcache 是一个 PHP 扩展，用于提高 PHP 应用程序的性能。它通过缓存预编译的字节码（opcode）来减少每次请求时解析和编译 PHP 代码的时间。以下是 OPcache 的详细介绍及其工作原理、配置和优缺点。
 

@@ -1,7 +1,9 @@
 title: mysql 的内存：缓冲池（Buffer Pool）
 author: Laiyong Wang
-date: 2024-05-18 17:41:01
 tags:
+  - mysql
+categories: []
+date: 2024-05-18 17:41:00
 ---
 #### 为什么要有 Buffer Pool？
   之前写过另一篇文章，有关存储器的种类和速度：http://laiyong.wang/2024/05/08/storage
@@ -40,5 +42,3 @@ tags:
   - 如何提高缓存命中率？
   换一种说法就是如何让常用的数据尽可能的保存在缓存里
   可以看另一篇文章：http://laiyong.wang/2024/05/09/LRU
-  
-  -

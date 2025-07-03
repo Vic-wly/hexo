@@ -1,7 +1,10 @@
 title: 'PHP ReflectionClass::getProperties 反射函数'
 author: Laiyong Wang
-date: 2022-10-08 14:13:36
 tags:
+  - php
+  - 反射
+categories: []
+date: 2022-10-08 14:13:00
 ---
 ReflectionProperty::IS_STATIC - 指示了 static 的属性。
 ReflectionProperty::IS_PUBLIC - 指示了 public 的属性。

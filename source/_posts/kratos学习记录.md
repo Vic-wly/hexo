@@ -1,7 +1,10 @@
 title: kratos学习记录
 author: Laiyong Wang
-date: 2024-10-09 17:11:12
 tags:
+  - go
+  - kratos
+categories: []
+date: 2024-10-09 17:11:00
 ---
 文档： https://go-kratos.dev/docs/getting-started/start
 视频： https://www.bilibili.com/video/BV1t3411h7uA

@@ -1,7 +1,9 @@
 title: go 的 Context
 author: Laiyong Wang
-date: 2024-06-27 17:57:46
 tags:
+  - go
+categories: []
+date: 2024-06-27 17:57:00
 ---
 `context`包提供了一种方式来管理多个goroutine之间的截止时间、取消信号和请求范围值。`context`常用于在多个goroutine之间传递取消信号或截止时间，以便能够及时终止或超时处理操作。它的主要作用是控制并发操作的生命周期。
 

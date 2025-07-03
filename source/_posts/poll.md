@@ -1,7 +1,9 @@
 title: go 的 sync.Pool
 author: Laiyong Wang
-date: 2024-06-24 17:22:03
 tags:
+  - go
+categories: []
+date: 2024-06-24 17:22:00
 ---
 ### Poll
 - 作用和效果

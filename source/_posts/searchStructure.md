@@ -1,7 +1,9 @@
 title: 数据表结构的查找算法
 author: Laiyong Wang
-date: 2022-11-15 13:19:28
 tags:
+  - 算法
+categories: []
+date: 2022-11-15 13:19:00
 ---
 ### 数据表
 同一类型的数据元素构成的集合

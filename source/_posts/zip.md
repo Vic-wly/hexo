@@ -1,7 +1,10 @@
 title: php 生成 zip 压缩文件
 author: Laiyong Wang
-date: 2023-02-21 17:06:37
 tags:
+  - 压缩
+  - ''
+categories: []
+date: 2023-02-21 17:06:00
 ---
 ```
     function addFileToZip($path, $zip, $dir)

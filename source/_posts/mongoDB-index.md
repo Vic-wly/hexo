@@ -1,7 +1,8 @@
 title: mongoDB的索引类型
 author: Laiyong Wang
-date: 2024-07-15 18:28:20
-tags:
+tags: []
+categories: []
+date: 2024-07-15 18:28:00
 ---
 ### 1. 单字段索引（Single Field Index）
 

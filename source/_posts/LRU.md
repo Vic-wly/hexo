@@ -1,7 +1,9 @@
 title: ' LRU 算法及其优化 LFU 算法'
 author: Laiyong Wang
-date: 2024-05-09 11:57:09
 tags:
+  - 算法
+categories: []
+date: 2024-05-09 11:57:00
 ---
 #### 释义：Least recently used，最近最少使用
 #### 用途：常用于 redis 的数据淘汰策略，Linux读文件、msyql查询

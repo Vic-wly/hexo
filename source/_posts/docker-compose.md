@@ -1,7 +1,9 @@
 title: 将自己本地容器打包，一键部署环境（docker）
 author: Laiyong Wang
-date: 2024-05-30 00:21:22
 tags:
+  - docker
+categories: []
+date: 2024-05-30 00:21:00
 ---
 ###### 我学习时与 chatGPT 的问答，学习中你遇到的问题可能我也遇到过，供参考：https://chatgpt.com/share/a2b2ea6f-b73f-4cf2-b970-026bf566c2db
 #### 安装 docker-compose

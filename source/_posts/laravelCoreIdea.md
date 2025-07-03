@@ -1,7 +1,10 @@
 title: 浅谈  依赖注入 控制反转 ioc容器
 author: Laiyong Wang
-date: 2022-06-10 10:19:30
 tags:
+  - 依赖注入
+  - 控制反转
+categories: []
+date: 2022-06-10 10:19:00
 ---
 #### ioc 控制反转
 &ensp;&ensp;&ensp;&ensp;参数由调用者控制（生成），而非被实例的对象（被调用的代码）来进行创建

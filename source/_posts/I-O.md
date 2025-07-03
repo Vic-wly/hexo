@@ -1,7 +1,10 @@
 title: I/O多路复用
 author: Laiyong Wang
-date: 2022-07-14 13:37:29
 tags:
+  - 系统知识
+  - 多路复用
+categories: []
+date: 2022-07-14 13:37:00
 ---
 1. 什么是IO多路复用？
 - IO 多路复用是一种同步IO模型，实现一个线程可以监视多个文件句柄；

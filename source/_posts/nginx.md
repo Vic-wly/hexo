@@ -1,7 +1,10 @@
 title: 'nginx  负载均衡 '
 author: Laiyong Wang
-date: 2024-06-15 16:18:09
 tags:
+  - nginx
+  - ''
+categories: []
+date: 2024-06-15 16:18:00
 ---
 ### 简单实例
 

@@ -1,7 +1,10 @@
 title: 脏读、不可重复读、幻读以及解决办法
 author: Laiyong Wang
-date: 2024-05-27 19:34:16
 tags:
+  - mysql
+  - mvcc
+categories: []
+date: 2024-05-27 19:34:00
 ---
 
 脏读：读到其他事务未提交的数据；

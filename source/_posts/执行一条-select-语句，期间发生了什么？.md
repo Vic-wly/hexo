@@ -1,7 +1,9 @@
 title: MySQL 执行一条 select 语句，期间发生了什么？
 author: Laiyong Wang
-date: 2024-04-03 16:13:24
 tags:
+  - mysql
+categories: []
+date: 2024-04-03 16:13:00
 ---
 #### 参考网址
 https://www.xiaolincoding.com/mysql/base/how_select.html

@@ -1,7 +1,9 @@
 title: mongoDB 基础知识
 author: Laiyong Wang
-date: 2024-07-15 10:37:12
 tags:
+  - mongoDB
+categories: []
+date: 2024-07-15 10:37:00
 ---
 ### 基本概念
 

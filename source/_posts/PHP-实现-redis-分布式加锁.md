@@ -1,7 +1,11 @@
 title: PHP 实现 redis 分布式锁
 author: Laiyong Wang
-date: 2024-06-15 14:37:03
 tags:
+  - 锁
+  - php
+  - redis
+categories: []
+date: 2024-06-15 14:37:00
 ---
 ### 代码
 

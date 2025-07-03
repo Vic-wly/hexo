@@ -1,7 +1,9 @@
 title: 设计模式总结（所有代码均通过与 chatGPT 调试获取）
 author: Laiyong Wang
-date: 2023-05-09 09:47:51
 tags:
+  - 设计模式
+categories: []
+date: 2023-05-09 09:47:00
 ---
 ### 开闭原则
 对于扩展是开放的，对于修改是封闭的

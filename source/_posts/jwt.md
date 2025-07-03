@@ -1,7 +1,10 @@
 title: jwt
 author: Laiyong Wang
-date: 2022-08-22 00:52:16
 tags:
+  - jwt
+  - 认证
+categories: []
+date: 2022-08-22 00:52:00
 ---
 ##### 全称
 json web token

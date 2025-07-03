@@ -1,7 +1,9 @@
 title: curl 发送各种请求
 author: Laiyong Wang
-date: 2023-02-23 11:00:00
 tags:
+  - http
+categories: []
+date: 2023-02-23 11:00:00
 ---
 ## 自己的
 ```

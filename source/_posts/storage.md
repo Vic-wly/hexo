@@ -1,7 +1,9 @@
 title: 存储器的种类和速度
 author: Laiyong Wang
-date: 2024-05-08 15:02:31
 tags:
+  - 系统知识
+categories: []
+date: 2024-05-08 15:02:00
 ---
 #### 种类
   大致可分为机械硬盘、固态硬盘、内存三种存储器，cpu内也有存储数据的组件：寄存器、CPU L1/L2/L3 Cache，

@@ -1,7 +1,9 @@
 title: go 的 channel
 author: Laiyong Wang
-date: 2024-06-27 19:06:09
 tags:
+  - go
+categories: []
+date: 2024-06-27 19:06:00
 ---
 ### 简单记录下，这个文章是给自己看的，使用方法和原理什么的请 google ........
 

@@ -1,7 +1,9 @@
 title: Opcache 和 JIT 编译器
 author: Laiyong Wang
-date: 2024-06-25 14:46:55
 tags:
+  - php
+categories: []
+date: 2024-06-25 14:46:00
 ---
 ### 在学习GO（别问我为啥不学swoole，我喜欢简单），研究性能，发散到PHP，想到了这两个，整理下他们的大概作用和效果，具体 jit 编译引擎和 Opcache 的编译原理请谷歌......
 

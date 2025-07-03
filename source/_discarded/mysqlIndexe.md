@@ -1,7 +1,8 @@
 title: mysql索引
 author: Laiyong Wang
-date: 2022-11-29 20:00:01
-tags:
+tags: []
+categories: []
+date: 2022-11-29 20:00:00
 ---
 #### 常用数据结构
 B树

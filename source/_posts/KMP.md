@@ -1,7 +1,9 @@
 title: 字符串匹配算法 BF 、KMP等
 author: Laiyong Wang
-date: 2022-11-10 09:23:41
 tags:
+  - 算法
+categories: []
+date: 2022-11-10 09:23:00
 ---
 ## 本文我将全用 php 语言来进行实现
 ### 参考链接 : <https://www.cnblogs.com/zhangtianq/p/5839909.html>
